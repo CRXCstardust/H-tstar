@@ -289,6 +289,26 @@
     📢 Join our Telegram for Live Updates!
     <a href="https://t.me/+nJCypsY4VzlkZjdl" target="_blank">Join Now</a>
   </div>
+<script>
+  // Disable right-click
+  document.addEventListener('contextmenu', event => event.preventDefault());
 
+  // Disable keyboard shortcuts like F12, Ctrl+Shift+I, etc.
+  document.addEventListener('keydown', event => {
+    if (
+      event.key === 'F12' ||
+      (event.ctrlKey && event.shiftKey && event.key === 'I') ||
+      (event.ctrlKey && event.shiftKey && event.key === 'J') ||
+      (event.ctrlKey && event.key === 'U')
+    ) {
+      event.preventDefault();
+    }
+  });
+
+  // Prevent opening dev tools by dragging
+  setInterval(() => {
+    debugger;
+  }, 100);
+</script>
 </body>
 </html>
